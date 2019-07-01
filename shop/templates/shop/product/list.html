@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+Products
+{% endblock %}
+
+{% block content %}
+<div class="content container">
+
+<h1>{% if category %}{{ category.name }}{% else %}Products
+{% endif %}</h1>
+
+{% for product in products  %}
+  <div class="tocontain">
+    <a href="#"><img src="{{product.image.url}}" ></a>
+    <br><br>
+    <h4 style="font-family: 'Cinzel', serif;"><b>{{product.name}}</b></h4>
+    <p>{{product.descp}}</p>
+  </div>
+
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+.sidebar {
+
+  height:100%;
+  width:190px;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+
+  margin-top: 55px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+
+}
+
+.sidebar a {
+
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+
+
+
+
+}
+
+
+
+
+.content {
+  margin-left: 190px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+  float: left;
+  margin-top: 60px;
+
+
+
+}
+
+.tocontain img {
+
+  padding-top: 20px;
+  object-fit: scale-down;
+  width: 200px;
+  height: 200px;
+  float: inherit;
+
+
+
+}
+
+.tocontain h4 {
+
+    box-shadow: 2px 4px grey;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
